@@ -1,0 +1,15 @@
+@font-face {
+ font-family: "SFProDisplay-Regular";
+ src: 	local("SFProDisplay-Regular"),
+ 		url("SFProDisplay-Regular.woff") format("woff"),
+ 		url("SFProDisplay-Regular.woff") format("woff");
+ font-weight: normal;
+}
+
+@font-face {
+ font-family: "SFProDisplay-SemiBold";
+ src: local("SFProDisplay-SemiBold"),
+ 		url("SFProDisplay-SemiBold.woff") format("woff"),
+ 		url("SFProDisplay-SemiBold.woff") format("woff2");
+ font-weight: bold;
+}

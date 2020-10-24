@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikadu</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <!-- normalize.css -->
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+
+            <div class="header__inner">
+
+                <a href="#" class="header__logo"><img src="assets/img/logo.svg" alt=""></a>
+                <nav class="nav">
+                    <a href="#" class="nav__link">Свежее</a>
+                    <a href="#" class="nav__link">Лучшее</a>
+                    <a href="#" class="nav__link">Горячее</a>
+                    <a href="#" class="nav__link">Подписки</a>
+                </nav>
+
+                <div class="search">
+                    <input class="search__input" type="search" placeholder="Поиск по сайту">
+                    <button class="search__button">
+                        <img class="search__icon" src="assets/img/search.svg" alt="">
+                    </button>
+                </div>
+
+                <div class="menu-toggle" id="menu-toggle"><span></span></div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container main_flex">
+            <section class="content">
+                <form class="new-post-form">
+                    <input type="text" placeholder="Заголовок поста" class="new-post-form__input-title">
+                    <textarea type="text" placeholder="Текст вашего поста" class="new-post-form__textarea"></textarea>
+                    <div class="new-post-form__buttons">
+                        <button type="submit" class="new-post-form__button-submit">
+                            <svg class="icon icon_fire">
+                                <use xlink:href="assets/img/icons.svg#fire"></use>
+                            </svg>
+                            <span>Опубликовать пост</span>
+                        </button>
+
+                        <button class="new-post-form__button-video">
+                            <svg class="icon icon_video">
+                                <use xlink:href="assets/img/icons.svg#video"></use>
+                            </svg>
+                            <span>Видео</span>
+                        </button>
+
+                        <button class="new-post-form__button-photo">
+                            <svg class="icon icon_photo">
+                                <use xlink:href="assets/img/icons.svg#photo"></use>
+                            </svg>
+                            <span>Фото</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <aside class="sidebar">
+                <div class="user">
+                    <a href class="user-info">
+                        <img class="user__avatar" width="40px" height="40px" src="assets/img/avatar.jpeg" alt="">
+                        <span class="user__name">igorek</span>
+                    </a>
+                    <a href="#" class="exit">
+                        <svg class="icon icon_exit">
+                            <use xlink:href="assets/img/icons.svg#exit"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <nav class="sidebar__nav">
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-menu__item">
+                            <a href="#" class="sidebar-menu__link active">Ответы</a>
+                        </li>
+                        <li class="sidebar-menu__item">
+                            <a href="#" class="sidebar-menu__link">Комментарии</a>
+                        </li>
+                        <li class="sidebar-menu__item">
+                            <a href="#" class="sidebar-menu__link">Оценки</a>
+                        </li>
+                        <li class="sidebar-menu__item">
+                            <a href="#" class="sidebar-menu__link">Сохраненное</a>
+                        </li>
+                        <li class="sidebar-menu__item">
+                            <a href="#" class="sidebar-menu__link">Подписки</a>
+                        </li>
+                        <li class="sidebar-menu__item">
+                            <a href="#" class="sidebar-menu__link">Заметки</a>
+                        </li>
+                        <li class="sidebar-menu__item">
+                            <a href="#" class="sidebar-menu__link">Игнор-лист</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="#" class="promo"></a>
+
+            </aside>
+        </div>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+<!-- Если не сложно, то хотелось бы, чтобы ещё проверили на предмет соответствия методологии БЭМ и если есть какие-либо комментарии, то по возможности добавить их. Спасибо за интенсив! -->
